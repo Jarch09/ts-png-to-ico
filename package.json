@@ -1,0 +1,17 @@
+{
+  "name": "to-ico",
+  "version": "1.0.0",
+  "description": "convert png to ico in memory",
+  "main": "src/index.ts",
+  "repository": "https://github.com/Jarch09/to-ico.git",
+  "author": {
+    "name": "jarch09",
+    "url": "https://github.com/jarch09"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.3",
+    "sinon": "^14.0.0",
+    "typescript": "^4.8.3"
+  }
+}
