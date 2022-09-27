@@ -2,8 +2,7 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "module": "es6",
-    "outDir": "esm/",
+    "outDir": "dist/"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "src/**/*.spec.ts"]

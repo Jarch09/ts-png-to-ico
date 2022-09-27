@@ -1,17 +1,47 @@
 {
-  "name": "to-ico",
+  "name": "png-to-ico",
   "version": "1.0.0",
   "description": "convert png to ico in memory",
-  "main": "src/index.ts",
-  "repository": "https://github.com/Jarch09/to-ico.git",
+  "license": "MIT",
   "author": {
     "name": "jarch09",
     "url": "https://github.com/jarch09"
   },
-  "license": "MIT",
+  "repository": "https://github.com/Jarch09/png-to-ico.git",
+  "homepage": "https://github.com/Jarch09/png-to-ico",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "dist/index.ts",
+  "module": "esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rebuild": "npm run clean && npm run build",
+    "build": "npm run build:dist && npm run build:esm",
+    "build:dist": "tsc -p tsconfig.build.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "clean": "rimraf dist esm",
+    "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "test": "TESTING=true jest",
+    "check": "npm run tslint && npm run test",
+    "precommit": "lint-staged",
+    "prepare": "husky install"
+  },
   "devDependencies": {
-    "jest": "^29.0.3",
-    "sinon": "^14.0.0",
-    "typescript": "^4.8.3"
+    "@types/pngjs": "6.0.1",
+    "husky": "^8.0.0",
+    "jest": "29.0.3",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
+    "rimraf": "3.0.2",
+    "sinon": "14.0.0",
+    "ts-jest": "29.0.2",
+    "typescript": "4.8.3"
+  },
+  "dependencies": {
+    "file-type": "18.0.0",
+    "image-size": "^1.0.2",
+    "jimp": "0.16.2",
+    "pngjs": "6.0.0"
   }
 }
