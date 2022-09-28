@@ -103,9 +103,7 @@ const createDIBPixelArray = (png: PNGWithMetadata): Buffer => {
  * @param pngs   provided list of PNGs
  * @returns      ICO image buffer
  */
-export async function generateIcoFromPNGs(
-  pngs: PNGWithMetadata[]
-): Promise<Buffer> {
+export function generateIcoFromPNGs(pngs: PNGWithMetadata[]): Buffer {
   const numImages = pngs.length;
 
   // create ICO header

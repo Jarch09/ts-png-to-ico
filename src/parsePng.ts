@@ -21,6 +21,7 @@ export async function parseBufferToPng(
       pngMetadata = metadata;
     });
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     image.parse(buffer, (err: Error, data: PNG) => {
       if (err == null) {
         resolve({

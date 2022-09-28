@@ -1,8 +1,10 @@
 node_modules/
 src/
-types/
+test-images/
 *.log
+.eslintrc.json
 .lintstagedrc
+.nvmrc
 .prettierrc
 jest.config.js
 tsconfig.*

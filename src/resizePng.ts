@@ -35,7 +35,7 @@ export async function resizePng(
   }
   if (typeof options.height !== 'number') {
     options.height = Math.trunc(
-      image.bitmap.height * ((options.width as number) / image.bitmap.width)
+      image.bitmap.height * (options.width / image.bitmap.width)
     );
   }
 
