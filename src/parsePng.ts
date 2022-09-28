@@ -7,7 +7,7 @@ import { PNGMetadata, PNGWithMetadata } from './types';
  *
  * @param buffer   Buffered data
  * @param options  PNG Options
- * @returns Promise<PNG>
+ * @returns        Promise<PNGWithMetadata>
  */
 export async function parseBufferToPng(
   buffer: Buffer,
@@ -32,4 +32,20 @@ export async function parseBufferToPng(
       }
     });
   });
+}
+
+/**
+ * Asynchronously parses buffered image data to PNGs
+ *
+ * @param buffers   Multiple image buffers
+ * @param options   PNG Options
+ * @returns         Promise<PNGWithMetadata[]>
+ */
+export async function parseAllBuffersToPngs(
+  buffers: Buffer[],
+  options?: PNGOptions
+): Promise<PNGWithMetadata[]> {
+  return Promise.all(
+    buffers.map(async (b) => await parseBufferToPng(b, options))
+  );
 }

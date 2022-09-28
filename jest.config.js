@@ -2,9 +2,6 @@ module.exports = {
   roots: [
     "<rootDir>/src",
   ],
-  transform: {
-    "^.+\\.tsx?$": "ts-jest",
-  },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   testEnvironment: 'node',
   moduleNameMapper: {
@@ -13,11 +10,12 @@ module.exports = {
   modulePaths: [
     "<rootDir>/src",
   ],
-  setupFiles: [
-  ],
   moduleFileExtensions: [
     'ts',
     'js',
     'json'
   ],
+  transform: {
+    "^.+\\.tsx?$": "ts-jest",
+  },
 };
