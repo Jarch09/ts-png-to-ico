@@ -22,7 +22,7 @@ const createICONDIR = (numImages: number): Buffer => {
   buf.writeUInt16LE(1, 2); // 1 means ICO file
   buf.writeUInt16LE(numImages, 4);
 
-  return buf;
+  // return buf;
 };
 
 // directly from the ICO specification (see link above)
