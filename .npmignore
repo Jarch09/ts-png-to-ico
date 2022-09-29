@@ -1,3 +1,6 @@
+.github/
+.husky/
+.vscode/
 node_modules/
 src/
 test-images/
@@ -8,3 +11,4 @@ test-images/
 .prettierrc
 jest.config.js
 tsconfig.*
+publish.sh

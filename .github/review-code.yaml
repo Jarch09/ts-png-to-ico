@@ -1,0 +1,27 @@
+# This is the workflow to use for everyday code changes.
+name: Lint & Test
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '**'
+    tags:
+      - '!*'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code 
+        uses: actions/checkout@v2
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.15.0'
+      - name: Install dependencies
+        run: yarn install
+      - name: Rebuild
+        run: yarn run rebuild
+      - name: Lint & test
+        run: yarn run check

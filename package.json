@@ -1,5 +1,5 @@
 {
-  "name": "png-to-ico",
+  "name": "ts-png-to-ico",
   "version": "1.0.0",
   "description": "convert png to ico in memory",
   "license": "MIT",
@@ -7,8 +7,8 @@
     "name": "jarch09",
     "url": "https://github.com/jarch09"
   },
-  "repository": "https://github.com/Jarch09/png-to-ico.git",
-  "homepage": "https://github.com/Jarch09/png-to-ico",
+  "repository": "https://github.com/Jarch09/ts-png-to-ico.git",
+  "homepage": "https://github.com/Jarch09/ts-png-to-ico",
   "engines": {
     "node": ">=10"
   },
