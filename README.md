@@ -4,12 +4,19 @@ Convert PNG to ICO in memory.
 
 This repo serves as a replacement for [https://github.com/kevva/to-ico](https://github.com/kevva/to-ico).
 
+This repo is 100% Typescript with minimal dependencies. The few external dependencies are up-to-date.
+
+## Why this repo?
+
+There are a bunch of other *PNG to ICO* tools and repos out there. Many of them, however, are woefully out of date and unmaintained. This is a modern version with updated dependencies and full test coverage.
+
 
 ## Install
 
 ```
 yarn add ts-png-to-ico
 ```
+
 
 ## Utilization
 
@@ -38,10 +45,10 @@ const icoBuf = await pngToIco([pngBuf, smallerPngBuf]);
 const icoFile = fs.writeFileSync('app.ico', icoBuf);
 ```
 
-### With Options
+### Options
 
-- `resize` (**boolean**): should PNGs be resized
-- `sizes` (**number[]**): list of valid image sizes
+- `resize` **boolean**: should inputted PNGs be resized?
+- `sizes` **number[]**: list of valid image sizes
 
 ```js
 import fs from 'fs';
@@ -57,3 +64,7 @@ const icoBuf = await pngToIco(pngBuf, icoOptions);
 
 const icoFile = fs.writeFileSync('app.ico', icoBuf);
 ```
+
+## License
+
+[MIT License](https://github.com/Jarch09/ts-png-to-ico/blob/main/LICENSE)
