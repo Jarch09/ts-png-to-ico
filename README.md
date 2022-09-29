@@ -4,11 +4,10 @@ Convert PNG to ICO in memory.
 
 This repo serves as a replacement for [https://github.com/kevva/to-ico](https://github.com/kevva/to-ico).
 
-This repo is 100% Typescript with minimal dependencies. The few external dependencies are up-to-date.
 
 ## Why this repo?
 
-There are a bunch of other *PNG to ICO* tools and repos out there. Many of them, however, are woefully out of date and unmaintained. This is a modern version with updated dependencies and full test coverage.
+There are a bunch of other *PNG to ICO* tools and repos out there. Many of them, however, are woefully out of date and unmaintained. This is a modern TypeScript version with updated dependencies and full test coverage.
 
 
 ## Install
