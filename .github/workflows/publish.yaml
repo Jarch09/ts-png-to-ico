@@ -34,4 +34,4 @@ jobs:
           chmod u+x ./publish.sh
           ./build.sh
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
