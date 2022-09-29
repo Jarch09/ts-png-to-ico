@@ -16,7 +16,6 @@ There are a bunch of other *PNG to ICO* tools and repos out there. Many of them,
 yarn add ts-png-to-ico
 ```
 
-
 ## Utilization
 
 ### Basic

@@ -13,7 +13,6 @@ import { PNGWithMetadata } from './types';
 const icoHeaderSize = 6;
 const icodirectorySize = 16;
 const dibHeaderSize = 40;
-const colorMode = 0;
 
 // directly from the ICO specification (see link above)
 const createICONDIR = (numImages: number): Buffer => {
@@ -57,7 +56,7 @@ const createDIBInfoHeader = (png: PNGWithMetadata): Buffer => {
   buf.writeInt32LE(png.image.height * 2, 8);
   buf.writeUInt16LE(1, 12);
   buf.writeUInt16LE(png.metadata.bpp * 8, 14);
-  buf.writeUInt32LE(colorMode, 16);
+  buf.writeUInt32LE(0, 16);
   buf.writeUInt32LE(png.image.data.length, 20);
   buf.writeInt32LE(0, 24);
   buf.writeInt32LE(0, 28);

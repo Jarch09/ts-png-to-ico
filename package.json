@@ -7,8 +7,20 @@
     "name": "jarch09",
     "url": "https://github.com/jarch09"
   },
-  "repository": "https://github.com/Jarch09/ts-png-to-ico.git",
-  "homepage": "https://github.com/Jarch09/ts-png-to-ico",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jarch09/ts-png-to-ico.git"
+  },
+  "homepage": "https://github.com/Jarch09/ts-png-to-ico#readme",
+  "keywords": [
+    "png",
+    "ico",
+    "favicon",
+    "favicon-generator",
+    "fast",
+    "convert",
+    "typescript"
+  ],
   "engines": {
     "node": ">=10"
   },
