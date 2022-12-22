@@ -1,6 +1,6 @@
 {
   "name": "ts-png-to-ico",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert png to ico in memory",
   "license": "MIT",
   "author": {
